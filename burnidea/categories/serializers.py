@@ -4,7 +4,7 @@ from .models import Idea, Category
 from ideas.serializers import IdeaSerializer
 
 class CategorySerializer(serializers.ModelSerializer):
-    products = serializers.PrimaryKeyRelatedField(queryset=Idea.objects.all(), many=True)    
+    ideas = serializers.PrimaryKeyRelatedField(queryset=Idea.objects.all(), many=True)    
     
     class Meta:
         model = Category
