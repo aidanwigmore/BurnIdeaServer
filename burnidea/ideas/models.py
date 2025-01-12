@@ -9,7 +9,7 @@ class Idea(models.Model):
 
     visible = models.BooleanField(default=True)
     
-    image = models.ImageField(upload_to='products/', blank=True, null=True)
+    image = models.ImageField(upload_to='ideas/', blank=True, null=True)
 
     class QuickConfig:
         name = 'idea'

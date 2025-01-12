@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'categories',
     'corsheaders',
     'customers',
+    'FAQ',
 ]
 
 MIDDLEWARE = [
