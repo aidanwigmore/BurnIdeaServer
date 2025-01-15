@@ -11,6 +11,8 @@ class Idea(models.Model):
     
     image = models.ImageField(upload_to='ideas/', blank=True, null=True)
 
+    date_created = models.DateTimeField(auto_now_add=True)
+
     class QuickConfig:
         name = 'idea'
         mutable_fields = [
