@@ -82,12 +82,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "https://teabankclient-d9c62f61e84a.herokuapp.com",
-#     "http://localhost:3000",
-# ]
-
 CORS_ALLOWED_ORIGINS = [
+    "ideaburn.xyz",
     "http://localhost:3000",
 ]
 
