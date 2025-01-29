@@ -9,7 +9,7 @@ class Idea(models.Model):
 
     visible = models.BooleanField(default=True)
     
-    image = models.ImageField(upload_to='ideas/', blank=True, null=True)
+    image = models.ImageField(upload_to='ideas/')
 
     date_created = models.DateTimeField(auto_now_add=True)
 

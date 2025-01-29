@@ -5,7 +5,7 @@ class About(models.Model):
     content = models.TextField()
     visible = models.BooleanField(default=True)
     
-    image = models.ImageField(upload_to='about/', blank=True, null=True)
+    image = models.ImageField(upload_to='about/')
 
     def __str__(self):
         return self.content
