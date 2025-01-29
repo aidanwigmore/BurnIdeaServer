@@ -1,6 +1,5 @@
 from django.db import models
 from ideas.models import Idea
-from ckeditor.fields import RichTextField
 
 # Create your models here.
 class Category(models.Model):
@@ -8,7 +7,7 @@ class Category(models.Model):
 
     visible = models.BooleanField(default=True)
     ideas = models.ManyToManyField(Idea, related_name='ideas')
-    category_description = RichTextField()
+    category_description = models.TextField()
 
     color = models.CharField(max_length=100, default='black')
 

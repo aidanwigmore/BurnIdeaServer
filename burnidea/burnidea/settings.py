@@ -30,7 +30,10 @@ SECRET_KEY = 'django-insecure-60)!sxu#_9=jg)@qhfshiq8)p2i4%fcmnltwmjh!4@5-i$+0@r
 DEBUG = True
 
 # ALLOWED_HOSTS = ['localhost', 'teabankserver-0062312d62ec.herokuapp.com']
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = [
+    'localhost',
+    'burn-idea-server-51e3bbbe54af.herokuapp.com'
+]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
@@ -67,7 +70,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'customers',
     'FAQ',
-    'ckeditor',
     'about',
 ]
 
@@ -83,7 +85,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "ideaburn.xyz",
+    "https://ideaburn.xyz",
     "http://localhost:3000",
 ]
 
